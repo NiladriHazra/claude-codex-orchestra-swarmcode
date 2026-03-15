@@ -143,9 +143,18 @@ export async function startInteractive(): Promise<void> {
     }
   }
 
-  console.log(chalk.bold.cyan("\n  🐝 Swarmcode"));
-  console.log(chalk.dim(`  Brain: ${orchCommand} | Agents: ${enabledAgents.join(", ") || "none"}`));
-  console.log(chalk.dim(`  Launching ${orchCommand} with agent tools...\n`));
+  const agentCount = enabledAgents.length;
+  const agentStr = enabledAgents.join(", ") || "none";
+
+  console.log();
+  console.log(chalk.bold.hex("#FFD700")("  🐝 swarmcode"));
+  console.log();
+  console.log(`  ${chalk.cyan("brain")}    ${orchCommand}`);
+  console.log(`  ${chalk.green("agents")}   ${agentStr}`);
+  console.log(`  ${chalk.dim("swarm")}    ${agentCount} agent${agentCount !== 1 ? "s" : ""} ready`);
+  console.log();
+  console.log(chalk.dim(`  launching ${orchCommand} with swarm tools...`));
+  console.log();
 
   const child = spawn(orchCommand, orchArgs, {
     stdio: "inherit",
