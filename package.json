@@ -1,0 +1,56 @@
+{
+  "name": "swarmcode",
+  "version": "0.1.0",
+  "description": "Multi-agent AI coding CLI — coordinate Claude, Codex, Gemini, Kimi, and more as a unified dev team",
+  "type": "module",
+  "bin": {
+    "swarmcode": "./dist/bin/swarmcode.js"
+  },
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx bin/swarmcode.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "multi-agent",
+    "claude",
+    "codex",
+    "gemini",
+    "kimi",
+    "orchestration",
+    "cli",
+    "coding-agents",
+    "swarm"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "dependencies": {
+    "@inquirer/prompts": "^8.3.0",
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "cosmiconfig": "^9.0.1",
+    "yaml": "^2.8.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  }
+}
