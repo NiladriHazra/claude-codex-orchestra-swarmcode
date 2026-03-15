@@ -2,7 +2,7 @@
 
 Run multiple AI coding agents as one team. Claude Code plans the work, Codex writes the code, Gemini handles research — all coordinated automatically from a single terminal.
 
-![swarmcode terminal](https://raw.githubusercontent.com/mskutlu/swarmcode/main/assets/swarmcode-terminal.png)
+![swarmcode terminal](https://pub-51091dcf1e9d4b04bb2e74f489c4f346.r2.dev/196c0e8468f1f582dbe3a8d8d657b32bae92bdaf7175bb174d197351f6bdba14.png)
 
 ## What it does
 
