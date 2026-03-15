@@ -16,6 +16,8 @@ Claude plans. Codex implements. Gemini researches. All from one terminal.
 <br />
 </div>
 
+<img src="https://pub-51091dcf1e9d4b04bb2e74f489c4f346.r2.dev/4befa3436aff0e0db63d351886e1ea4627dbdf23f46d848e030286c6775160a3.png" alt="swarmcode terminal" width="100%" />
+
 ## Install
 
 ```bash
@@ -33,13 +35,13 @@ swarmcode         # launch the swarm
 
 You type a task. The brain (Claude, Codex, or whichever you picked) splits the work into waves and fires off multiple agents in parallel:
 
-> **Wave 1** &mdash; Codex scaffolds the project
+> **Wave 1** - Codex scaffolds the project
 >
-> **Wave 2** &mdash; Codex builds components, Gemini writes types, Kimi creates hooks *(parallel)*
+> **Wave 2** - Codex builds components, Gemini writes types, Kimi creates hooks *(parallel)*
 >
-> **Wave 3** &mdash; Codex wires everything together
+> **Wave 3** - Codex wires everything together
 >
-> **Verify** &mdash; Brain checks: builds? runs? all connected?
+> **Verify** - Brain checks: builds? runs? all connected?
 
 Each wave commits to git. You see the diff after every step.
 
@@ -75,21 +77,21 @@ Any agent can be the **brain** or a **sub-agent**. You choose during `swarmcode 
 **Plan, check, execute.** The brain follows a strict loop:
 
 1. **Analyze** the codebase
-2. **Plan** &mdash; break work into small tasks, assign to agents
-3. **Check** &mdash; validate the plan before running (dependencies, file conflicts)
-4. **Execute** &mdash; fire agents in parallel waves
-5. **Commit + diff** &mdash; atomic git commit per wave
-6. **Verify** &mdash; do files exist? real code? all wired? builds clean?
-7. **Fix** &mdash; if broken, run a fix wave
+2. **Plan** - break work into small tasks, assign to agents
+3. **Check** - validate the plan before running (dependencies, file conflicts)
+4. **Execute** - fire agents in parallel waves
+5. **Commit + diff** - atomic git commit per wave
+6. **Verify** - do files exist? real code? all wired? builds clean?
+7. **Fix** - if broken, run a fix wave
 8. **Repeat** until done
 
-**Parallel waves** &mdash; independent tasks run at the same time across different agents. Wave 2 doesn't start until Wave 1 finishes. Two agents never touch the same file in one wave.
+**Parallel waves** - independent tasks run at the same time across different agents. Wave 2 doesn't start until Wave 1 finishes. Two agents never touch the same file in one wave.
 
-**Atomic commits** &mdash; every wave produces a git commit with a full diff, so you always know what changed and which agent did it.
+**Atomic commits** - every wave produces a git commit with a full diff, so you always know what changed and which agent did it.
 
-**Verification** &mdash; after all waves, the brain checks from your perspective: files exist, code is real (not stubs), everything is wired together, and it builds without errors.
+**Verification** - after all waves, the brain checks from your perspective: files exist, code is real (not stubs), everything is wired together, and it builds without errors.
 
-**Auto-fix vs escalate** &mdash; the brain auto-fixes bugs, missing deps, and type errors. It escalates architectural changes to you.
+**Auto-fix vs escalate** - the brain auto-fixes bugs, missing deps, and type errors. It escalates architectural changes to you.
 
 ## Config
 
@@ -134,16 +136,14 @@ npm test
 npm run build
 ```
 
-## License
-
-[MIT](LICENSE)
-
----
-
 <div align="center">
 
-Built by [Niladri Hazra](https://x.com/bytehumi)
+<br />
 
-[@bytehumi](https://x.com/bytehumi)
+MIT License &bull; [Niladri Hazra](https://x.com/bytehumi) &bull; [@bytehumi](https://x.com/bytehumi)
+
+<br />
+
+If this helped you, give it a star :)
 
 </div>
