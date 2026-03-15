@@ -1,6 +1,6 @@
 {
   "name": "@bytehumi/swarmcode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Multi-agent AI coding CLI — coordinate Claude, Codex, Gemini, Kimi, and more as a unified dev team",
   "type": "module",
   "bin": {
