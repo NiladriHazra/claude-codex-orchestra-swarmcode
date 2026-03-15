@@ -22,7 +22,7 @@ function buildSystemPrompt(agents: Record<string, AgentConfig>): string {
     )
     .join("\n");
 
-  return `You are the orchestrator of a multi-agent AI coding system called "orchestra".
+  return `You are the orchestrator of a multi-agent AI coding system called "swarmcode".
 
 You have access to the following sub-agents that you can delegate work to:
 

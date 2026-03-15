@@ -404,10 +404,10 @@ export const initCommand = new Command("init")
 
       console.log(chalk.bold("\n  Start swarmcode:\n"));
       console.log(
-        `  ${chalk.cyan("orchestra")}              ${chalk.dim("# interactive mode")}`
+        `  ${chalk.cyan("swarmcode")}              ${chalk.dim("# interactive mode")}`
       );
       console.log(
-        `  ${chalk.cyan('orchestra run "task"')}   ${chalk.dim("# one-shot mode")}`
+        `  ${chalk.cyan('swarmcode run "task"')}   ${chalk.dim("# one-shot mode")}`
       );
       console.log();
     } catch (err) {

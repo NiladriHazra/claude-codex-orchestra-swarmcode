@@ -25,7 +25,7 @@ function buildOrchArgs(
         "--append-system-prompt",
         systemPrompt,
         "--allowedTools",
-        "Read,Grep,Glob,Bash,mcp__swarmcode__orchestra_agents",
+        "Read,Grep,Glob,Bash,mcp__swarmcode__swarm_agents",
         ...(model ? ["--model", model] : []),
       ];
     case "codex":

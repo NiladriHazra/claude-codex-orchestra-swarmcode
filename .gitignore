@@ -1,5 +1,5 @@
 node_modules/
 dist/
 *.tsbuildinfo
-.orchestra.yml
+.swarmcode.yml
 .env

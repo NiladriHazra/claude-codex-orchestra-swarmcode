@@ -86,7 +86,7 @@ async function main() {
   }
 
   mcpServer.tool(
-    "orchestra_agents",
+    "swarm_agents",
     "List all available sub-agents, their capabilities, and roles.",
     {},
     async () => {
