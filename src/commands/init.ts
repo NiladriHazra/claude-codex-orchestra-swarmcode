@@ -402,7 +402,7 @@ export const initCommand = new Command("init")
         console.log(`  Sub-agent:    ${chalk.cyan(agent.displayName)} ${status}`);
       }
 
-      console.log(chalk.bold("\n  Start orchestra:\n"));
+      console.log(chalk.bold("\n  Start swarmcode:\n"));
       console.log(
         `  ${chalk.cyan("orchestra")}              ${chalk.dim("# interactive mode")}`
       );
