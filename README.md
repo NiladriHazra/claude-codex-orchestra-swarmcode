@@ -1,7 +1,7 @@
 <div align="center">
 <br />
 
-# swarmcode
+# 🐝 swarmcode
 
 ### Run multiple AI coding agents as one team
 
